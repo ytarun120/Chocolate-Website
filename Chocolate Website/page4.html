@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title> Website</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <SCRIPT TYPE="TEXT/JAVASCRIPT">
+        function myFunction() {
+            alert("Your Order has been Placed");
+        }    
+    </SCRIPT>
+</head>
+
+<body>
+    <div class="bg">
+    <div class="top">
+        <ul class="nav-menu">
+            <li>
+                <a href="page1.html">Home</a></li>
+            <li>
+                <a href="page2.html">Services</a></li>
+            <li class="about">
+                <a href="">About Order</a></li>
+        </ul>
+    </div>
+    <h2>Order Details</h2>
+    <form>
+        <label> Customer Name: </label> &emsp;&emsp;&ensp;&nbsp;
+        <input type="text" placeholder="Customer Name" maxlength="10" required><br>
+        <label> Customer Shop Name: </label>&nbsp;&nbsp;
+        <input type="text" placeholder="Shop Name" maxlength="10" required><br>
+        <label> Invoice No. </label>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" placeholder="Invoice no." id="mynum" maxlength="10"required><br>
+        <label>Contact NO. : </label>&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp;
+        <input type="number" placeholder="+91" minlength="4" maxlength="10" required><br>
+        <label style="font-size:18pt;">Alternative Contact NO :</label>&ensp;&nbsp;
+        <input type="number" placeholder="+91" id="mynum" required><br>
+        <label>Number of Order:</label>&emsp;&ensp;&nbsp;&ensp;&nbsp;
+        <input type="number" placeholder="No. of orders" required><br>
+        <label> Payment option</label><br>
+        <input type="radio" id="html" name="payment mode" value="COD" required> <label style="font-size:20px;"><b>Cash on Delivery</b></label>
+        <input type="radio" id="html" name="payment mode" value="UPI" required> <label style="font-size:18px;"><b>UPI</b></label>&ensp;&nbsp;
+        <input type="text" placeholder="UPI" style="font-size: 16px; font-stretch: 20;" maxlength="20"><br>
+          <br>  <label>Address:<br> </label>
+            &ensp;&nbsp;&emsp;&emsp;&emsp;&ensp;&emsp;&ensp;&nbsp;&emsp;&emsp;&emsp;&ensp;&ensp;<textarea rows="5" maxlength="60" placeholder="Address"></textarea>
+            <br><br><label>City </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;
+            &nbsp;<select style="font-size: 24px;" required>
+            <option>Choose City</option>
+            <option>Banglore</option>
+            <option>Mumbai</option>
+            <option>New Delhi</option>
+            <option>Chennai</option>
+            <option>Kolkata</option>
+            <option>Hyderabad</option>
+        </select>
+        <br><br><Label>PinCode</Label>&emsp;&emsp;&emsp;&ensp;&ensp;&emsp;&ensp;
+            &ensp;&nbsp;<input type="number" placeholder="" required><br><br>
+        </address><br>
+        <button onclick="myFunction()"><u>Confirm Order</u> </button>
+        <button><a href="page1.html">Cancel</a></button>
+    </form>
+</div>
+</body>
+
+</html>
